@@ -1,0 +1,508 @@
+/* 
+Add the following elements:
+supercursorbuy
+supercursorstring
+supercursorcpsstring
+supercursorcoststring
+supercursorownedstring
+wipesavebutton
+*/
+body {
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Courier, monospace;
+}
+
+/* Title screen elements. */
+#basedonbuildstring {
+  position: fixed;
+  top: 49vw;
+  left: 81vw;
+}
+
+#buildstring {
+  position: fixed;
+  top: 49vw;
+}
+
+#title {
+  font-size: 50px;
+  font-weight: 100;
+  position: fixed;
+  top: 17vw;
+  left: 43vw;
+  width: 130px;
+}
+
+#updatestring {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 100;
+  position: fixed;
+  top: 28vw;
+  left: 42.8vw;
+}
+
+#betastring {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 100;
+  position: fixed;
+  top: 24.5vw;
+  left: 45vw;
+}
+
+#startbutton {
+  background: transparent;
+  height: 3vw;
+  width: 10vw;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  font-family: courier, monospace;
+  font-size: 17px;
+  position: fixed;
+  top: 46.3vw;
+  left: 44vw;
+}
+
+/* Screen display elements. */
+#titlescreen {
+  display: block;
+}
+
+#shoppanel {
+  display: none;
+}
+
+#gamescreen {
+  display: none;
+}
+
+#upgradeshoppanel {
+  display: none;
+}
+
+#statspanel {
+  display: none;
+}
+
+/* Game screen elements */
+#coin {
+  background: transparent url("../img/coin.jpg") no-repeat;
+  background-size: cover;
+  border-style: none;
+  width: 14vw;
+  height: 14vw;
+  position: fixed;
+  top: 13vw;
+  left: 42vw;
+}
+
+#clickstring {
+  text-align: center;
+  position: fixed;
+  overflow: scroll;
+  width: 500px;
+  top: 26.7vw;
+  left: 34.7vw;
+}
+
+#cpsstring {
+  text-align: center;
+  position: fixed;
+  overflow: scroll;
+  width: 500px;
+  top: 28vw;
+  left: 34.7vw;
+}
+
+#clickvaluestring {
+  text-align: center;
+  position: fixed;
+  overflow: scroll;
+  width: 500px;
+  top: 29.3vw;
+  left: 34.7vw;
+}
+
+#savebutton {
+  background: transparent;
+  height: 3vw;
+  width: 10vw;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  font-family: courier, monospace;
+  font-size: 17px;
+  position: fixed;
+  top: 0.5vw;
+  left: 44vw;
+}
+
+/* Shop panel elements */
+#shopicon {
+  position: fixed;
+  top: 1.3vw;
+  left: 8.3vw;
+}
+
+#shopstring {
+  font-size: 35px;
+  font-family: courier, monospace;
+  position: fixed;
+  top: -0.5vw;
+  left: 11.8vw;
+}
+
+#shopborder {
+  background: repeat;
+  position: fixed;
+  top: 0vw;
+  left: 3vw;
+}
+
+#clickerbuy {
+  background: transparent url("../img/shop/clicker.png") no-repeat;
+  background-size: 90%;
+  background-position: center;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  height: 3vw;
+  width: 3vw;
+  position: fixed;
+  top: 7vw;
+  left: 8.7vw;
+}
+
+#clickerstring {
+  position: fixed;
+  top: 5vw;
+  left: 8.3vw;
+}
+
+#clickercpsstring {
+  text-align: center;
+  position: fixed;
+  overflow: scroll;
+  top: 6vw;
+  left: 12vw;
+}
+
+#clickercoststring {
+  text-align: center;
+  position: fixed;
+  overflow: scroll;
+  top: 7vw;
+  left: 12vw;
+}
+
+#clickersownedstring {
+  text-align: center;
+  position: fixed;
+  overflow: scroll;
+  top: 8vw;
+  left: 12vw;
+}
+
+#superclicker {
+  display: none;
+}
+
+#superclickerbuy {
+  background: transparent url("../img/shop/superclicker.png") no-repeat;
+  background-size: cover;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  height: 3vw;
+  width: 3vw;
+  position: fixed;
+  top: 12vw;
+  left: 8.7vw;
+}
+
+#superclickerstring {
+  text-align: center;
+  position: fixed;
+  top: 10vw;
+  left: 6.8vw;
+}
+
+#superclickercpsstring {
+  text-align: center;
+  position: fixed;
+  overflow: scroll;
+  top: 11vw;
+  left: 12vw;
+}
+
+#superclickercoststring {
+  text-align: center;
+  position: fixed;
+  overflow: scroll;
+  top: 12vw;
+  left: 12vw
+}
+
+#superclickersownedstring {
+  text-align: center;
+  position: fixed;
+  overflow: scroll;
+  top: 13vw;
+  left: 12vw;
+}
+
+#doublepointer {
+  display: none;
+}
+
+#doublepointerbuy {
+  background: transparent url("../img/shop/doublepointer.png") no-repeat;
+  background-size: 90%;
+  background-position: center;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  height: 3vw;
+  width: 3vw;
+  position: fixed;
+  top: 17vw;
+  left: 8.7vw;
+}
+
+#doublepointerstring {
+  text-align: center;
+  position: fixed;
+  top: 15vw;
+  left: 6.7vw;
+}
+
+#doublepointercpsstring {
+  text-align: center;
+  position: fixed;
+  overflow: scroll;
+  top: 16vw;
+  left: 12vw;
+}
+
+#doublepointercoststring {
+  text-align: center;
+  position: fixed;
+  overflow: scroll;
+  top: 17vw;
+  left: 12vw;
+}
+
+#doublepointersownedstring {
+  text-align: center;
+  position: fixed;
+  overflow: scroll;
+  top: 18vw;
+  left: 12vw;
+}
+
+/* Upgrade shop panel elements */
+#upgradebutton {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  font-family: courier, monospace;
+  font-size: 17px;
+  background: transparent;
+  height: 3vw;
+  width: 10vw;
+  position: fixed;
+  top: 46.3vw;
+  left: 8vw;
+}
+
+#upgradeshopborder {
+  background: repeat;
+  position: fixed;
+  top: 0vw;
+  left: 3vw;
+}
+
+#shopreturnbutton {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  font-family: courier, monospace;
+  font-size: 17px;
+  background: transparent;
+  height: 3vw;
+  width: 10vw;
+  position: fixed;
+  top: 46.3vw;
+  left: 8vw;
+}
+
+#unlockstring {
+  text-align: center;
+  display: none;
+  position: fixed;
+  top: 40vw;
+  left: 43vw;
+}
+
+#upgradeshopicon {
+  position: fixed;
+  top: 1.3vw;
+  left: 6.4vw;
+}
+
+#upgradestring {
+  font-size: 35px;
+  font-family: courier, monospace;
+  position: fixed;
+  top: -0.5vw;
+  left: 10vw;
+}
+
+#cursorbuy {
+  background: transparent url("../img/shop/cursor.png") no-repeat;
+  background-size: 90%;
+  background-position: center;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  height: 3vw;
+  width: 3vw;
+  position: fixed;
+  top: 7vw;
+  left: 7.6vw;
+}
+
+#cursorstring {
+  text-align: center;
+  position: fixed;
+  top: 5vw;
+  left: 7.4vw;
+}
+
+#cursorcpsstring {
+  text-align: center;
+  position: fixed;
+  top: 6vw;
+  left: 10.8vw;
+}
+
+#cursorcoststring {
+  text-align: center;
+  position: fixed;
+  top: 7vw;
+  left: 10.8vw;
+}
+
+#cursorownedstring {
+  text-align: center;
+  position: fixed;
+  top: 8vw;
+  left: 10.8vw;
+}
+
+/* Stats panel elements */
+#statsborder {
+  position: fixed;
+  background: repeat;
+  top: 0vw;
+  left: 68vw;
+}
+
+#statsicon {
+  position: absolute;
+  top: 1.3vw;
+  left: 80vw;
+}
+
+#statsstring {
+  font-size: 35px;
+  position: absolute;
+  width: 105px;
+  top: -0.4vw;
+  left: 83.5vw;
+}
+
+#timestring {
+  text-align: center;
+  position: relative;
+  width: 400px;
+  top: 2.5vw;
+  left: 74.1vw;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+#lifetimeclicksstring {
+  text-align: center;
+  position: relative;
+  overflow: scroll;
+  width: 400px;
+  top: 3vw;
+  left: 74.1vw;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+#lifetimemanualclicksstring {
+  text-align: center;
+  position: relative;
+  overflow: scroll;
+  width: 400px;
+  top: 3.5vw;
+  left: 74.1vw;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+#coinclickcountstring {
+  text-align: center;
+  position: relative;
+  overflow: scroll;
+  width: 400px;
+  top: 4vw;
+  left: 74.1vw;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+#totalclickhelpersstring {
+  text-align: center;
+  position: relative;
+  overflow: scroll;
+  width: 400px;
+  top: 4.5vw;
+  left: 74.1vw;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+#achievementcpsstring {
+  text-align: center;
+  position: relative;
+  overflow: scroll;
+  width: 400px;
+  top: 5vw;
+  left: 74.1vw;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+#savingstring {
+  display: none;
+  text-align: center;
+  position: fixed;
+  width: 250px;
+  top: 2.7vw;
+  left: 42.2vw;
+}

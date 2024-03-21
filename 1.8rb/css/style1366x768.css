@@ -1,0 +1,588 @@
+body {
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Courier, monospace;
+}
+
+/* Title screen elements. */
+#basedonbuildstring {
+  position: fixed;
+  top: 48.5vw;
+  left: 78vw;
+}
+
+#buildstring {
+  position: fixed;
+  top: 48.5vw;
+}
+
+#title {
+  font-size: 50px;
+  font-weight: 100;
+  position: fixed;
+  top: 15vw;
+  left: 41.5vw;
+  width: 135px;
+}
+
+#updatestring {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 100;
+  position: fixed;
+  top: 26.5vw;
+  left: 41vw;
+}
+
+#betastring {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 100;
+  position: fixed;
+  top: 23vw;
+  left: 43.5vw;
+}
+
+#startbutton {
+  background: transparent;
+  height: 3vw;
+  width: 10vw;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  font-family: courier, monospace;
+  font-size: 17px;
+  position: fixed;
+  top: 46.3vw;
+  left: 44vw;
+}
+
+/* Screen display elements. */
+#titlescreen {
+  display: block;
+}
+
+#shoppanel {
+  display: none;
+}
+
+#gamescreen {
+  display: none;
+}
+
+#upgradeshoppanel {
+  display: none;
+}
+
+#statspanel {
+  display: none;
+}
+
+/* Game screen elements */
+#coin {
+  background: transparent url("../img/coin.jpg") no-repeat;
+  background-size: cover;
+  border-style: none;
+  width: 14vw;
+  height: 14vw;
+  position: fixed;
+  top: 13vw;
+  left: 42vw;
+}
+
+#clickstring {
+  text-align: center;
+  position: fixed;
+  width: 500px;
+  top: 26.7vw;
+  left: 30.5vw;
+}
+
+#cpsstring {
+  text-align: center;
+  position: fixed;
+  width: 500px;
+  top: 28.3vw;
+  left: 30.5vw;
+}
+
+#clickvaluestring {
+  text-align: center;
+  position: fixed;
+  width: 500px;
+  top: 30vw;
+  left: 30.5vw;
+}
+
+#savebutton {
+  background: transparent;
+  height: 3vw;
+  width: 10vw;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  font-family: courier, monospace;
+  font-size: 17px;
+  position: fixed;
+  top: 0.5vw;
+  left: 44vw;
+}
+
+#savingstring {
+  display: none;
+  text-align: center;
+  position: fixed;
+  width: 500px;
+  top: 2.7vw;
+  left: 30.9vw;
+}
+
+#wipesavebutton {
+  background: transparent;
+  height: 3vw;
+  width: 10vw;
+  border-style: solid;
+  border-width: 1px;
+  border-color: red;
+  font-family: courier, monospace;
+  font-size: 17px;
+  color: red;
+  position: fixed;
+  top: 46vw;
+  left: 44vw;
+}
+
+#wipedstring {
+  display: none;
+  text-align: center;
+  position: fixed;
+  width: 500px;
+  top: 43vw;
+  left: 30.9vw;
+}
+
+#unlockstring {
+  text-align: center;
+  width: 500px;
+  display: none;
+  position: fixed;
+  top: 37vw;
+  left: 30.5vw;
+}
+
+/* Shop panel elements */
+#shopicon {
+  position: fixed;
+  top: 1.28vw;
+  left: 8.3vw;
+}
+
+#shopstring {
+  font-size: 35px;
+  font-family: courier, monospace;
+  position: fixed;
+  top: -0.5vw;
+  left: 12.5vw;
+}
+
+#shopborder {
+  background: repeat;
+  position: fixed;
+  top: 0vw;
+  left: -1vw;
+}
+
+#clickerbuy {
+  background: transparent url("../img/shop/clicker.png") no-repeat;
+  background-size: 90%;
+  background-position: center;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  height: 3vw;
+  width: 3vw;
+  position: fixed;
+  top: 7vw;
+  left: 9.5vw;
+}
+
+#clickerstring {
+  font-size: 14px;
+  position: fixed;
+  top: 5vw;
+  left: 9.1vw;
+}
+
+#clickercpsstring {
+  font-size: 14px;
+  text-align: center;
+  overflow: scroll;
+  position: fixed;
+  top: 6vw;
+  left: 12.7vw;
+}
+
+#clickercoststring {
+  font-size: 14px;
+  text-align: center;
+  overflow: scroll;
+  position: fixed;
+  top: 7vw;
+  left: 12.7vw;
+}
+
+#clickersownedstring {
+  font-size: 14px;
+  text-align: center;
+  overflow: scroll;
+  position: fixed;
+  top: 8vw;
+  left: 12.7vw;
+}
+
+#superclicker {
+  display: none;
+}
+
+#superclickerbuy {
+  background: transparent url("../img/shop/superclicker.png") no-repeat;
+  background-size: cover;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  height: 3vw;
+  width: 3vw;
+  position: fixed;
+  top: 12vw;
+  left: 9.5vw;
+}
+
+#superclickerstring {
+  font-size: 14px;
+  text-align: center;
+  position: fixed;
+  top: 10vw;
+  left: 7.5vw;
+}
+
+#superclickercpsstring {
+  font-size: 14px;
+  text-align: center;
+  overflow: scroll;
+  position: fixed;
+  top: 11vw;
+  left: 12.7vw;
+}
+
+#superclickercoststring {
+  font-size: 14px;
+  text-align: center;
+  overflow: scroll;
+  position: fixed;
+  top: 12vw;
+  left: 12.7vw;
+}
+
+#superclickersownedstring {
+  font-size: 14px;
+  text-align: center;
+  overflow: scroll;
+  position: fixed;
+  top: 13vw;
+  left: 12.7vw;
+}
+
+#doublepointer {
+  display: none;
+}
+
+#doublepointerbuy {
+  background: transparent url("../img/shop/doublepointer.png") no-repeat;
+  background-size: 90%;
+  background-position: center;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  height: 3vw;
+  width: 3vw;
+  position: fixed;
+  top: 17vw;
+  left: 9.5vw;
+}
+
+#doublepointerstring {
+  font-size: 14px;
+  text-align: center;
+  position: fixed;
+  top: 15vw;
+  left: 7.2vw;
+}
+
+#doublepointercpsstring {
+  font-size: 14px;
+  text-align: center;
+  overflow: scroll;
+  position: fixed;
+  top: 16vw;
+  left: 12.7vw;
+}
+
+#doublepointercoststring {
+  font-size: 14px;
+  text-align: center;
+  overflow: scroll;
+  position: fixed;
+  top: 17vw;
+  left: 12.7vw;
+}
+
+#doublepointersownedstring {
+  font-size: 14px;
+  text-align: center;
+  overflow: scroll;
+  position: fixed;
+  top: 18vw;
+  left: 12.7vw;
+}
+
+/* Upgrade shop panel elements */
+#upgradebutton {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  font-family: courier, monospace;
+  font-size: 17px;
+  background: transparent;
+  height: 3vw;
+  width: 10vw;
+  position: fixed;
+  top: 46.3vw;
+  left: 9vw;
+}
+
+#upgradeshopborder {
+  background: repeat;
+  position: fixed;
+  top: 0vw;
+  left: -1vw;
+}
+
+#shopreturnbutton {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  font-family: courier, monospace;
+  font-size: 17px;
+  background: transparent;
+  height: 3vw;
+  width: 10vw;
+  position: fixed;
+  top: 46.3vw;
+  left: 9vw;
+}
+
+#upgradeshopicon {
+  position: fixed;
+  top: 1.28vw;
+  left: 5.8vw;
+}
+
+#upgradestring {
+  font-size: 35px;
+  font-family: courier, monospace;
+  position: fixed;
+  top: -0.5vw;
+  left: 10vw;
+}
+
+#cursorbuy {
+  background: transparent url("../img/shop/cursor.png") no-repeat;
+  background-size: 90%;
+  background-position: center;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  height: 3vw;
+  width: 3vw;
+  position: fixed;
+  top: 7vw;
+  left: 7.6vw;
+}
+
+#cursorstring {
+  font-size: 14px;
+  text-align: center;
+  position: fixed;
+  top: 5vw;
+  left: 7.4vw;
+}
+
+#cursorcpsstring {
+  font-size: 14px;
+  text-align: center;
+  position: fixed;
+  top: 6vw;
+  left: 10.8vw;
+}
+
+#cursorcoststring {
+  font-size: 14px;
+  text-align: center;
+  position: fixed;
+  top: 7vw;
+  left: 10.8vw;
+}
+
+#cursorownedstring {
+  font-size: 14px;
+  text-align: center;
+  position: fixed;
+  top: 8vw;
+  left: 10.8vw;
+}
+
+#supercursor {
+  display: none;
+}
+
+#supercursorbuy {
+  background: transparent url("../img/shop/supercursor.png") no-repeat;
+  background-size: 90%;
+  background-position: center;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  height: 3vw;
+  width: 3vw;
+  position: fixed;
+  top: 12vw;
+  left: 7.6vw;
+}
+
+#supercursorstring {
+  font-size: 14px;
+  text-align: center;
+  position: fixed;
+  top: 10vw;
+  left: 5.7vw;
+}
+
+#supercursorcpsstring {
+  font-size: 14px;
+  text-align: center;
+  position: fixed;
+  top: 11vw;
+  left: 10.8vw;
+}
+
+#supercursorcoststring {
+  font-size: 14px;
+  text-align: center;
+  position: fixed;
+  top: 12vw;
+  left: 10.8vw;
+}
+
+#supercursorownedstring {
+  font-size: 14px;
+  text-align: center;
+  position: fixed;
+  top: 13vw;
+  left: 10.8vw;
+}
+
+/* Stats panel elements */
+#statsborder {
+  position: fixed;
+  background: repeat;
+  top: 0vw;
+  left: 65vw;
+}
+
+#statsicon {
+  position: absolute;
+  top: 1.28vw;
+  left: 79vw;
+}
+
+#statsstring {
+  font-size: 35px;
+  position: absolute;
+  width: 105px;
+  top: -0.5vw;
+  left: 83.2vw;
+}
+
+#timestring {
+  text-align: center;
+  position: relative;
+  overflow: scroll;
+  width: 400px;
+  top: 5.5vw;
+  left: 69vw;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+#lifetimeclicksstring {
+  text-align: center;
+  position: relative;
+  overflow: scroll;
+  width: 400px;
+  top: 6vw;
+  left: 69vw;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+#lifetimemanualclicksstring {
+  text-align: center;
+  position: relative;
+  overflow: scroll;
+  width: 400px;
+  top: 6.5vw;
+  left: 69vw;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+#coinclickcountstring {
+  text-align: center;
+  position: relative;
+  overflow: scroll;
+  width: 400px;
+  top: 7vw;
+  left: 69vw;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+#totalclickhelpersstring {
+  text-align: center;
+  position: relative;
+  overflow: scroll;
+  width: 400px;
+  top: 7.5vw;
+  left: 69vw;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+#achievementcpsstring {
+  text-align: center;
+  position: relative;
+  overflow: scroll;
+  width: 400px;
+  top: 8vw;
+  left: 69vw;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
